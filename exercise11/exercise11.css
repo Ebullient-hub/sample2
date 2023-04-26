@@ -1,0 +1,38 @@
+body{
+    background-color: grey;
+}
+.vote-head{
+  text-align: center;
+  font-family: "Noto Sans Japanese", sans-serif;
+  color: white;
+    font-weight: bold;
+}
+form{
+    max-width: 500px;
+  margin: 0 auto;
+  border: 1px solid  transparent;
+  background-color: white;
+  border-radius: 10px;
+}
+label{
+    color: blue;
+    font-family: "Noto Sans Japanese", sans-serif;
+    font-weight: bold;
+}
+label,input{
+    margin-left: 5px;
+}
+input[type="text"], input[type="tel"], input[type="date"] {
+    width: 485px;
+    height: 20px; /* or any other value you want */
+  }
+select {
+    width: 98%;/* or any other value you want */
+  }
+#register{
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+}
+
+  

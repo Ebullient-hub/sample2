@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>アニメショップ-Menu</title>
+    <link rel="shortcut icon" type="image/png" href="logo/download.png" class="rounded-circle">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" rel="stylesheet" integrity="sha512-..." crossorigin="anonymous"/>
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.min.css" rel="stylesheet">
+  </head>
+  <body>
+   
+  </head>
+  <body>
+    <nav class="navbar fixed-top navbar-expand-lg bg-dark bg-gradient">
+        <div class="container-fluid">
+          <div class="dropdown user">
+            <a class="btn btn-dark dropdown-toggle" href="#" role="button" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+              アニメショップ
+            </a>
+            <ul class="dropdown-menu bg-dark bg-gradient" aria-labelledby="userDropdown">
+              <li><a class="dropdown-item" href="profile.html"><i class="fa fa-user me-2"></i> Profile</a></li>
+              <li><a class="dropdown-item" href="add-to-cart.html"><i class="fa fa-shopping-cart me-2"></i> Cart</a></li>
+              <li><a class="dropdown-item logout" onclick="logout()"><i class="fa-solid fa-right-to-bracket fa-rotate-180"></i> Logout</a></li>
+            </ul>
+          </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active page-home" href="#welcome" aria-current="page">Home
+                  <i class="fa-solid fa-house fa-fade"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link page-about" href="#About-footer">About
+                  <i class="fa-solid fa-circle-info fa-shake"></i>
+                </a>
+              </li>
+              <li class="nav-item dropend page-store">
+                <a class="nav-link dropdown-toggle"  role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Store
+                  <i class="fa-solid fa-shop fa-shake"></i>
+                </a>
+                <ul class="dropdown-menu bg-dark bg-gradient">
+                  <li><a class="dropdown-item" href="shirt.html">Shirts</a></li>
+                  <li><a class="dropdown-item" href="short.html">Shorts & Jeans</a></li>
+                  <li><a class="dropdown-item" href="jackets.htm;">Jackets, Coats & Hoodies</a></li>
+                  <li><a class="dropdown-item" href="shoes.html">Shoes</a></li>
+                  <li><a class="dropdown-item" href="accessories.html">Accessories</a></li>
+                </ul>
+              </li>
+            </ul>
+            <div class="dropdown searchbar">
+              <button class="btn btn-outline-light dropdown-toggle btn-sm" type="button" id="searchDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                Search
+              </button>
+              <div class="dropdown-menu dropdown-menu-end" aria-labelledby="searchDropdown">
+                <form >
+                  <div class="input-group">
+                    <form  role="search">
+                      <input class="form-control " type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                  </div>
+                </form>
+              </div>
+            </div>
+            
+            <div class="hrefs">
+              <a class="register" href="register.html">Sign Up
+                <span class="separator" style="color: white;">|</span>
+              <a class="login" href="login.html">Login</a></a>
+              
+              </div>
+           
+            
+          </div>
+        </div>
+      </nav>
+      <h1 class="welcome"id="welcome">WELCOME to アニメショップ!</h1>
+      <!-- Carousel -->
+      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active c-item">
+            <img src="images/image1.jpg" class="d-block mx-auto c-img" data-bs-interval="2000" alt="slide-1">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Shirts</h5>
+              <p style="color:white">Look stylish with our Shirt Desings.</p>
+            </div>
+          </div>
+          <div class="carousel-item c-item">
+            <img src="images/image_2.jpg" class="d-block mx-auto c-img" data-bs-interval="2000" alt="Slide 2">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Jackets</h5>
+              <p style="color:white">Wear our  Jacket Desings.</p>
+            </div>
+          </div>
+          <div class="carousel-item c-item">
+            <img src="images/image_3.jpg" class="d-block mx-auto c-img" data-bs-interval="2000" alt="Slide 3">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Shoes</h5>
+              <p style="color:white">Discover unique shoe Desings.</p>
+            </div>
+          </div>
+          <div class="carousel-item c-item">
+            <img src="images/image_4.jpg" class="d-block mx-auto c-img" data-bs-interval="2000" alt="Slide 4">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 style="color:black">Accessories</h5>
+              <p>Browse Shirt Desings.</p>
+            </div>
+          </div>
+          <div class="carousel-item c-item">
+            <img src="images/image_5.jpg" class="d-block mx-auto c-img" data-bs-interval="2000" alt="Slide 5">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Short & Jeans</h5>
+              <p style="color:white">Wear our Short & Jean Desings.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      
+    </div>
+      <!--Sample Collection-->
+      <h1 class="latest"id="latest">LATEST FROM アニメショップ!</h1>
+      <div class="row card-row container-fluid">
+            <div class="card bg-dark bg-gradient col-4" style="width: 18rem;">
+            <img src="images/One Piece Luffy SHirt.jpg" class="card-img-top shoe-img" alt="...">
+            <div class="card-body">
+              <h1 class="card-head" id="product-name">One Piece Luffy T-shirt</h1>
+              <p class="card-text bg-dark">&#8369;200</p>
+              <div class="button-container">
+                <button type="button" class="btn btn-primary btn-sm add-cart" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                  Add to cart
+                  <i class="fa-solid fa-cart-plus"></i>
+              </button>
+                  <!-- Modal -->
+                  <div class="modal" id="staticBackdrop" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                      <div class="modal-content bg-dark bg-gradient text-white">
+                          <div class="modal-header">
+                          <h1 class="modal-title fs-5 sel-var" id="staticBackdropLabel">Select Variation</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                              <form action="" class="variation">
+                                  <label for="sizes" class="size">Select Size:</label>
+                                  <input type="checkbox" name="option" value="option1" onclick="disableCheckboxes(this)"> S
+                                  <input type="checkbox" name="option" value="option2" onclick="disableCheckboxes(this)"> M
+                                  <input type="checkbox" name="option" value="option3" onclick="disableCheckboxes(this)"> L
+                                  <input type="checkbox" name="option" value="option3" onclick="disableCheckboxes(this)"> XL
+                                  <input type="checkbox" name="option" value="option3" onclick="disableCheckboxes(this)"> XXL
+                                  <br>
+                                  <br>
+                                  <label for="color" class="size">Select Color:</label>
+                                  <input type="color" name="" id="#color">
+                                  <br>
+                                  <br>
+                                  <label for="quantity" class="size">Quantity:</label>
+                                  <input type="number" name="quantity" id="#quanity" min="1" max="100" step="1">
+                              </form>
+                          </div>
+                          <div class="modal-footer">
+                          <button type="button" class="btn btn-danger cancel" data-bs-dismiss="modal">Cancel
+                              <i class="fa-solid fa-xmark"></i>
+                          </button>
+                          <button id="confirm-button" type="submit" class="btn btn-success" onclick="addToCart()">Confirm
+                            <i class="fa-solid fa-check"></i>
+                          </button>
+                              
+                          </button>
+                          </div>
+                      </div>
+                      </div>
+                  </div>
+                
+              </div>              
+            </div>
+          </div>
+          <div class="card bg-dark bg-gradient col-4" style="width: 18rem;">
+            <img src="images/Bromeo Attack on Titan Unisex Sneaker 1.jpg" class="card-img-top shoe-img" alt="...">
+            <div class="card-body">
+              <h1 class="card-head">Attack on Titan Sneackers</h1>
+              <p class="card-text bg-dark">&#8369;350</p>
+              <div class="button-container">
+                <button type="button" class="btn btn-primary btn-sm add-cart" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                  Add to cart
+                  <i class="fa-solid fa-cart-plus"></i>
+              </button>
+                  <!-- Modal -->
+                  <div class="modal" id="staticBackdrop" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                      <div class="modal-content bg-dark bg-gradient text-white">
+                          <div class="modal-header">
+                          <h1 class="modal-title fs-5 sel-var" id="staticBackdropLabel">Select Variation</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                              <form action="" class="variation">
+                                  <label for="sizes" class="size">Select Size:</label>
+                                  <input type="checkbox" name="option" value="option1" onclick="disableCheckboxes(this)"> S
+                                  <input type="checkbox" name="option" value="option2" onclick="disableCheckboxes(this)"> M
+                                  <input type="checkbox" name="option" value="option3" onclick="disableCheckboxes(this)"> L
+                                  <input type="checkbox" name="option" value="option3" onclick="disableCheckboxes(this)"> XL
+                                  <input type="checkbox" name="option" value="option3" onclick="disableCheckboxes(this)"> XXL
+                                  <br>
+                                  <br>
+                                  <label for="color" class="size">Select Color:</label>
+                                  <input type="color" name="" id="#color">
+                                  <br>
+                                  <br>
+                                  <label for="quantity" class="size">Quantity:</label>
+                                  <input type="number" name="quantity" id="#quanity" min="1" max="100" step="1">
+                              </form>
+                          </div>
+                          <div class="modal-footer">
+                          <button type="button" class="btn btn-danger cancel" data-bs-dismiss="modal">Cancel
+                              <i class="fa-solid fa-xmark"></i>
+                          </button>
+                          <button id="confirm-button" class="btn btn-success" onclick="addToCart()">Confirm
+                            <i class="fa-solid fa-check"></i>
+                          </button>
+                          </div>
+                      </div>
+                      </div>
+                  </div>
+              </div>  
+            </div>
+          </div>
+          <div class="card bg-dark bg-gradient col-4" style="width: 18rem;">
+            <img src="images/NARUTO RED SAGE MODE JACKET HOODIE.jpg" class="card-img-top shoe-img" alt="...">
+            <div class="card-body">
+              <h1 class="card-head">Naruto Red Sage Mode Jacket</h1>
+              <p class="card-text bg-dark">&#8369;350</p>
+              <div class="button-container">
+                <button type="button" class="btn btn-primary btn-sm add-cart" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                  Add to cart
+                  <i class="fa-solid fa-cart-plus"></i>
+              </button>
+                  <!-- Modal -->
+                  <div class="modal" id="staticBackdrop" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                      <div class="modal-content bg-dark bg-gradient text-white">
+                          <div class="modal-header">
+                          <h1 class="modal-title fs-5 sel-var" id="staticBackdropLabel">Select Variation</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                              <form action="" class="variation">
+                                  <label for="sizes" class="size">Select Size:</label>
+                                  <input type="checkbox" name="option" value="option1" onclick="disableCheckboxes(this)"> S
+                                  <input type="checkbox" name="option" value="option2" onclick="disableCheckboxes(this)"> M
+                                  <input type="checkbox" name="option" value="option3" onclick="disableCheckboxes(this)"> L
+                                  <input type="checkbox" name="option" value="option3" onclick="disableCheckboxes(this)"> XL
+                                  <input type="checkbox" name="option" value="option3" onclick="disableCheckboxes(this)"> XXL
+                                  <br>
+                                  <br>
+                                  <label for="color" class="size">Select Color:</label>
+                                  <input type="color" name="" id="#color">
+                                  <br>
+                                  <br>
+                                  <label for="quantity" class="size">Quantity:</label>
+                                  <input type="number" name="quantity" id="#quanity" min="1" max="100" step="1">
+                              </form>
+                          </div>
+                          <div class="modal-footer">
+                          <button type="button" class="btn btn-danger cancel" data-bs-dismiss="modal">Cancel
+                              <i class="fa-solid fa-xmark"></i>
+                          </button>
+                          <button id="confirm-button" class="btn btn-success" onclick="addToCart()">Confirm
+                            <i class="fa-solid fa-check"></i>
+                          </button>
+                          </div>
+                      </div>
+                      </div>
+                  </div>
+              </div>  
+            </div>
+          </div>
+          <div class="card bg-dark bg-gradient col-4" style="width: 18rem;">
+            <img src="images/Ghost of Tsushima MAsk.jpg" class="card-img-top shoe-img" alt="...">
+            <div class="card-body">
+              <h1 class="card-head">Ghost of Tsushima Mask</h1>
+              <p class="card-text bg-dark">&#8369;720</p>
+              <div class="button-container">
+                <button type="button" class="btn btn-primary btn-sm add-cart" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                  Add to cart
+                  <i class="fa-solid fa-cart-plus"></i>
+              </button>
+                  <!-- Modal -->
+                  <div class="modal" id="staticBackdrop" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                      <div class="modal-content bg-dark bg-gradient text-white">
+                          <div class="modal-header">
+                          <h1 class="modal-title fs-5 sel-var" id="staticBackdropLabel">Select Variation</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                              <form action="" class="variation">
+                                  <label for="sizes" class="size">Select Size:</label>
+                                  <input type="checkbox" name="option" value="option1" onclick="disableCheckboxes(this)"> S
+                                  <input type="checkbox" name="option" value="option2" onclick="disableCheckboxes(this)"> M
+                                  <input type="checkbox" name="option" value="option3" onclick="disableCheckboxes(this)"> L
+                                  <input type="checkbox" name="option" value="option3" onclick="disableCheckboxes(this)"> XL
+                                  <input type="checkbox" name="option" value="option3" onclick="disableCheckboxes(this)"> XXL
+                                  <br>
+                                  <br>
+                                  <label for="color" class="size">Select Color:</label>
+                                  <input type="color" name="" id="#color">
+                                  <br>
+                                  <br>
+                                  <label for="quantity" class="size">Quantity:</label>
+                                  <input type="number" name="quantity" id="#quanity" min="1" max="100" step="1">
+                              </form>
+                          </div>
+                          <div class="modal-footer">
+                          <button type="button" class="btn btn-danger cancel" data-bs-dismiss="modal">Cancel
+                              <i class="fa-solid fa-xmark"></i>
+                          </button>
+                          <button id="confirm-button" class="btn btn-success" onclick="addToCart()">Confirm
+                            <i class="fa-solid fa-check"></i>
+                          </button>
+                          </div>
+                      </div>
+                      </div>
+                  </div>
+              </div>  
+            </div>
+          </div>
+          
+      </div>
+      
+        <!-- Back to top anchor -->
+          <a class="top" href="#welcome">
+            <i class="fa-solid fa-circle-up fa-bounce"></i>
+          </a>
+          
+      <!-- FAQ SECTION -->
+  
+      <footer class="bg-dark bg-gradient text-white">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-lg-4 mb-4 mb-md-0">
+              <h5 class="text-uppercase mb-3 about-footer">About Us</h5>
+              <h6 class="about-name">アニメショップ</h6>
+              <p class="about-text">アニメショップ(Anime Shop) is a Philippine base online shop for apparells of any variety.</p>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4 mb-md-0">
+              <h4 class="info">INFO</h4>
+              <ul class="list-unstyled">
+                <li><a href="faq.html" class="faq active">FAQ
+                  <i class="fa-sharp fa-solid fa-circle-question fa-beat-fade"></i>
+                </a></li>
+                <li><a href="contact-us.html" class="contact">Contact Us
+                  <i class="fa-solid fa-address-card fa-beat-fade"></i>
+                </a></li>
+              </ul>
+            </div>
+            <div class="col-md-12 col-lg-4 mb-4 mb-md-0">
+              <h5 class="text-uppercase mb-3 follow-us">Follow Us</h5>
+              <div class="d-flex justify-content-center justify-content-lg-end">
+                <a class="foot-link mx-3" href="https://www.facebook.com/profile.php?id=100010596679191" target="_blank">
+                  <i class="fa-brands fa-facebook fa-shake"></i>
+                </a>
+                <a class="foot-link mx-3" href="https://www.youtube.com/channel/UCG_lH-jCpTVOejatWFe1bTg" target="_blank">
+                  <i class="fa-brands fa-youtube fa-shake"></i>
+                </a>
+                <a class="foot-link mx-3" href="https://www.twitch.tv" target="_blank">
+                  <i class="fa-brands fa-twitch fa-shake"></i>
+                </a>
+                <a class="foot-link mx-3" href="https://www.instagram.com" target="_blank">
+                  <i class="fa-brands fa-instagram fa-shake"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bg-dark py-2">
+          <div class="container text-center">
+            <p class="text-white mb-0">&copy; 2023 Jude Muriel L. Bonite. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+      
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.all.min.js"></script>
+        <script src="site.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>

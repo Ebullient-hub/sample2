@@ -1,0 +1,93 @@
+body {
+    background-color:rgb(23, 44, 28);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+  .container{
+    margin-right: 50px;
+  }
+  /*Navbar*/
+  .nav-title{
+    color: white;
+    font-size: medium;
+    margin-left: 250px;
+  }
+  /*Page content */
+  .title{
+    display: inline-block;
+      margin-left: 250px;
+      font-family: "Noto Sans Japanese", sans-serif;
+      color: white;
+      font-weight: bold;
+      font-size: 26px;
+    }
+    .subtitle {
+      display: block;
+      font-family: "Noto Sans Japanese", sans-serif;
+      color: white;
+      font-weight: bold;
+      font-size: 28px;
+      margin-left: 250px;
+    }
+  .reg-form  {
+      width: 800px;
+      font-family: "Noto Sans Japanese", sans-serif;
+      border: 5px solid white;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 10px;
+      padding-left: 10px;
+      padding-right: 10px;
+      margin-right: 300px;
+    }
+  .username,.password {
+    border: 2px solid grey;
+    border-radius: 20px;
+      width: 175px;
+    }
+  .loginbtn{
+    font-family: "Noto Sans Japanese", sans-serif;
+    background-color: #1877f2;
+    border: 2px solid grey;
+    border-radius: 20px;
+    width: 90px;
+  }
+  .login-title{
+      font-size: 21px;
+      text-align: center;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+  .google,.facebook{
+      text-decoration: none;
+      display: inline-block;
+      text-align: center;
+          width: 200px;
+          padding: 10px 20px;
+          border: 1px solid grey;
+          border-radius: 10px;
+          text-decoration: none;
+          font-size: 14px;
+          margin: 10px;
+    }
+  .fa-person-to-door{
+    color: black;
+  }
+  .fa-google{
+    font-size: 1rem;
+    }
+  .fa-facebook{
+    color: #1877f2;
+    font-size: 1rem;
+  }
+  .input-group-text{
+    border: 5px solid white;
+    border-radius: 5px;
+  }
+  .register{
+    text-decoration: none;
+  }

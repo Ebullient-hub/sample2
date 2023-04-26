@@ -1,0 +1,144 @@
+body{
+    padding-top: 4rem;
+    background-color:rgb(23, 44, 28);
+    width: 100%;
+    height: 100vh;
+}
+/*Navbar*/
+
+.page-name{
+    color: white;
+}
+.nav-link{
+    font-family: "Noto Sans Japanese", sans-serif;
+    color: white;
+}
+.dropdown-item{
+    font-family: "Noto Sans Japanese", sans-serif;
+    color: white;
+}
+.form-control-dark {
+    background-color: #343a40;
+    color: #fff;
+    border-color: white;
+  }
+.search-text{
+    color: white;
+}
+.active{
+    color: black;
+    font-family: "Noto Sans Japanese", sans-serif;
+}
+.searchButton{
+    justify-content: end;
+}
+.logout:hover{
+    cursor: pointer;
+}
+.hrefs{
+    margin-left: 50px;
+}
+.register,.login{
+    text-decoration: none;
+    color: white;
+}
+.register:hover{
+    color: blue;
+}
+.login:hover{
+    color: blue;
+}
+.searchbar{
+    margin-left: 800px;
+}
+.dropdown-menu.show .form-control {
+    width: 300px;
+    padding-right: 100px;
+  }
+  img.rounded-circle {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+  }
+.contactInfo{
+    text-decoration: none;
+    color: white;
+}
+  /*footer*/
+footer{
+    width: 100vw;
+}
+.about-footer,.info,.follow-us{
+    margin-top: 30px;
+}
+.about-footer,.about-name,.about-text{
+    font-family: "Noto Sans Japanese", sans-serif;
+    text-align: center;
+    font-weight: bold;
+}
+.about-name{
+    font-family: "Noto Sans Japanese", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+.fa-facebook{
+    color: #1877f2;
+    font-size: 1.5em;
+}
+.fa-youtube{
+    color: #ff0000;
+    font-size: 1.5em;
+}
+.fa-twitch{
+    color: #6441a5;
+    font-size: 1.5em;
+}
+.fa-user{
+    font-size: 1rem;
+    margin-right: 20px;
+}
+.fa-instagram {
+    color: #833ab4; 
+    background: -webkit-linear-gradient(45deg, #833ab4, #fd1d1d);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.5em;
+  }
+.top{
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    text-align: right;
+}
+.fa-brands{
+    margin-left: 4rem;
+}
+.faq,.contact{
+    font-family: "Noto Sans Japanese", sans-serif;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 12rem;
+}
+.info{
+    font-family: "Noto Sans Japanese", sans-serif;
+    color: white;
+    text-align: center;
+}
+.follow-us{
+    font-family: "Noto Sans Japanese", sans-serif;
+    color: white;
+    text-align: center;
+}
+.copyright{
+    color: white;
+}
+.fa-links{
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: white;
+}
+.copyright{
+    font-family: "Noto Sans Japanese", sans-serif;
+}

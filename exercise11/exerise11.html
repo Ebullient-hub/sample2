@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exrcise11</title>
+</head>
+<body>
+  <style>
+body{
+  background-color: rgb(20, 40, 20);
+}
+.vote-head{
+text-align: center;
+font-family: "Noto Sans Japanese", sans-serif;
+color: white;
+font-weight: bold;
+}
+.vote-reg{
+  max-width: 500px;
+margin: 0 auto;
+border: 1px solid  transparent;
+background-color: rgb(34, 190, 63);
+border-radius: 10px;
+}
+label{
+  color: rgb(44, 44, 227);
+  font-family: "Noto Sans Japanese", sans-serif;
+  font-weight: bold;
+}
+label,input{
+  margin-left: 5px;
+}
+input[type="text"], input[type="tel"], input[type="date"] {
+  width: 485px;
+  height: 20px;
+}
+select {
+  width: 98%;
+}
+#register{
+  height: 30px;
+  border-radius: 10px;
+  background-color: white;
+  color: black;
+  margin-left: 200px;
+}
+#address{
+  margin-left: 4px;
+}
+#civil-status{
+  margin-left: 6px;
+}
+#register:hover{
+  background-color: blue;
+  color: white;
+}
+  </style>
+  <h1 class="vote-head">Voter's Registration Form</h1>
+  <form action="" method="post" class="vote-reg" id="myForm">
+      <label for="Full_Name">Full Name:</label>
+      <br>
+      <input type="text" placeholder="Enter full name..." id="fullname" required="">
+      <br>
+      <label for="Address">Address:</label>
+      <br>
+      <textarea name="Address" id="address" cols="66" rows="1
+      " required=""></textarea>
+      <br>
+      <label for="Contact-number">Contact Number:</label>
+      <br>
+      <input type="tel" placeholder="+63..." id="fullname" required="">
+      <br>
+      <label for="Birth-Date">Brith Date:</label>
+      <br>
+      <input type="date" placeholder="DD/MM/YYYY" id="b-date" required="">
+      <br>
+      <label for="Civil-Status">Civil Status:</label>
+      <br>
+      <select name="" id="civil-status" required="">
+          <option value="choose">Choose..</option>
+          <option value="single">Single</option>
+          <option value="married">Married</option>
+          <option value="widowed">Widowed</option>
+          <option value="separated">Separated</option>
+      </select>
+      <br>
+      <label for="gender">Gender:
+          <input type="radio" id="male" required="">Male
+          <input type="radio" id="female" required="">Female
+      </label>
+      <br>
+      <label for="occupation">Occupation:</label>
+      <input type="text" name="occupation" id="occupation" required="">
+      <br>
+      <br>
+      <button type="submit" id="register">Register</button>
+  </form>
+  <script>
+        const myForm = document.querySelector('#myForm');
+
+
+        myForm.addEventListener('submit', (event) => {
+        event.preventDefault(); 
+
+
+
+
+        alert('Form submitted successfully!');
+        });
+</script>
+
+</body>
+</html>
